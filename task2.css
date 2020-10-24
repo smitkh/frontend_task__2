@@ -1,0 +1,192 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .navbar-fixed-top.scrolled {
+    background-color: rgb(23,40,54) !important;
+  }
+  
+  .main-img-text {
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: initial;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .main-img-header-text {
+    font-size: 2.2rem;
+    line-height: 100%;
+  }
+  
+  .main-img-contain-text {
+    font-family: Montserrat-Light;
+    font-size: 1.2rem;
+  }
+  
+  .group3-img{
+    height: 160px;
+  }
+  
+  p.Testimonial::before{
+    content: "";
+    position: relative;
+    background-image: url(“\ copy\ 2.png);
+    height: 28px;
+    width: 37px;
+    opacity: 0.7;
+    display:inline-block;
+    background-repeat: no-repeat;
+    
+  }
+  
+  p.Testimonial::after{
+    content: "";
+    position: absolute;
+    background-image: url(”\ copy.png);
+    height: 28px;
+    width: 37px;
+    opacity: 0.7;
+    display:inline-block;
+    bottom: 20px;
+    background-repeat: no-repeat;
+  }
+  
+  /* button */
+  .btn-effect{
+    height: 60px;
+    border-width: 2px;
+    font-family: Montserrat-Bold;
+    border-color: #55c2a8;
+    color: black; 
+    overflow: hidden; 
+  }
+  
+  .btn-effect:hover{
+    height: 60px;
+    border-width: 0;
+    color: #55c2a8; 
+    font-family: Montserrat-Bold;
+    background-color: #172836;
+    text-shadow: 0.5px 0.5px #686868 
+  }
+  
+  .btn-content-after{
+    height: 60px;
+    border-width: 0px;
+    background-color: #172836;
+  }
+  
+  .btn-content-title{
+    font-size: 0.8rem;
+    color: #55c2a8; 
+    font-family: Montserrat-Bold;
+    line-height: 100%;
+  }
+  
+  .btn-content-content{
+    font-size: 0.5rem;
+    font-family: Montserrat-Light;
+    color: white;
+    
+  }
+  
+  /* font */
+  @font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url("Montserrat/Montserrat-ExtraBold.ttf");
+  }
+  
+  @font-face {
+    font-family: Montserrat-Light;
+    src: url("Montserrat/Montserrat-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: Montserrat-Regular;
+    src: url("Montserrat/Montserrat-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url("Montserrat/Montserrat-Bold.ttf");
+  }
+  
+  .Montserrat-Bold{
+    font-family: Montserrat-Bold;
+    color: white;
+  }
+  
+  .Montserrat-ExtraBold {
+    font-family: Montserrat-ExtraBold;
+    color: white;
+  }
+  
+  .Montserrat-Light {
+    font-family: Montserrat-Light;
+    color: white;
+  }
+  
+  .Montserrat-Regular {
+    font-family: Montserrat-Regular;
+    color: white;
+  }
+  
+  /* media query */
+  
+  @media only screen and (max-width: 1000px) {
+    ul.navbar-links li:nth-child(5) {
+      display: none;
+    }
+  
+    .group3-img{
+      height: 120px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    ul.navbar-links li:nth-child(4) {
+      display: none;
+    }
+  
+    .group3-img{
+      height: 80px;
+    }
+  
+    html {
+      font-size: 70%;
+    }
+    ul.navbar-links {
+      padding-left: 2%;
+      background-color: rgba(48, 58, 59, 0.9);
+    }
+    p.Testimonial::after{
+      bottom: 10px; 
+    }
+  
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    #group3{
+      display: none;
+    }
+  
+    .btn-content-title{
+      font-size: 1rem;    
+      line-height: 100%;
+    }
+    
+    .btn-content-content{
+      font-size: 0.7rem;
+    }
+  
+  }
